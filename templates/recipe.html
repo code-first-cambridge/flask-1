@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<title>GutHub :: {{ recipe['name'] }}</title>
+</head>
+<body>
+<div class="container" id="content">
+	<h1>GutHub :: {{ recipe['name'] }}</h1>
+	<p>{{ recipe['description'] }}</p>
+	<p>Ingredients:</p>
+	<ul>
+		{% for ingredient in recipe['ingredients'] %}
+		<li>{{ ingredient }}</li>
+		{% endfor %}
+	</ul>
+	<p>{{ recipe['instructions'] }}</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<title>GutHub</title>
+</head>
+<body>
+<div class="container" id="content">
+	<h1>GutHub</h1>
+	<p>Here's a list of recipes</p>
+	<ul>
+		{% for slug in recipes %}
+		<li><a href="/recipe/{{ slug }}">{{ recipes[slug]['name'] }}</a> :: {{ recipes[slug]['description'] }}</li>
+		{% endfor %}
+	</ul>
+</div>
+</body>
+</html>
+
