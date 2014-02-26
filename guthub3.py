@@ -10,17 +10,17 @@ from guthub_recipes import recipes
 
 ingredients = {
     'spaghetti': { 'recipes': ['spaghetti-bolognese', 'spaghetti-carbonara'] },
-    'mince', { 'recipes': ['spaghetti-bolognese'] },
-    'tomatoes', { 'recipes': ['spaghetti-bolognese'] },
-    'onions', { 'recipes': ['spaghetti-bolognese'] },
-    'garlic', { 'recipes': ['spaghetti-bolognese'] },
-    'cheese', { 'recipes': ['spaghetti-bolognese', 'spaghetti-carbonara'] },
-    'eggs', { 'recipes': ['spaghetti-carbonara', 'eggs-florentine'] },
-    'bacon', { 'recipes': ['spaghetti-carbonara'] },
-    'muffins', { 'recipes': ['eggs-florentine'] },
-    'salmon', { 'recipes': ['eggs-florentine'] },
-    'spinach', { 'recipes': ['eggs-florentine'] },
-    'sauce', { 'recipes': ['eggs-florentine'] },
+    'mince': { 'recipes': ['spaghetti-bolognese'] },
+    'tomatoes': { 'recipes': ['spaghetti-bolognese'] },
+    'onions': { 'recipes': ['spaghetti-bolognese'] },
+    'garlic': { 'recipes': ['spaghetti-bolognese'] },
+    'cheese': { 'recipes': ['spaghetti-bolognese', 'spaghetti-carbonara'] },
+    'eggs': { 'recipes': ['spaghetti-carbonara', 'eggs-florentine'] },
+    'bacon': { 'recipes': ['spaghetti-carbonara'] },
+    'muffins': { 'recipes': ['eggs-florentine'] },
+    'salmon': { 'recipes': ['eggs-florentine'] },
+    'spinach': { 'recipes': ['eggs-florentine'] },
+    'sauce': { 'recipes': ['eggs-florentine'] },
 }
 
 app = Flask(__name__)
