@@ -41,7 +41,17 @@ def recipe(slug):
 
 @app.route('/ingredient/<slug>')
 def ingredient(slug):
-    return slug
+    try:
+        ingredient = ingredients[slug]
+        recipe_slugs = ingredient['recipes']
+        recipes_for_ingredient = {}
+        for recipe_slug in recipe_slugs:
+            recipe = recipes[recipe_slug]
+            recipes_for_ingredient[recipe_slug] = recipe
+
+        return render_template('ingredient.html', ingredient=slug, recipes=recipes_for_ingredient)
+    except KeyError:
+        return render_template('ingredient_not_found.html')
 
 
 if __name__ == '__main__':

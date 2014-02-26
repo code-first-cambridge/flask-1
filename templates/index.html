@@ -13,7 +13,12 @@
 		<li><a href="/recipe/{{ slug }}">{{ recipes[slug]['name'] }}</a> :: {{ recipes[slug]['description'] }}</li>
 		{% endfor %}
 	</ul>
+	<p>Here's a list of ingredients</p>
+	<ul>
+		{% for slug in ingredients %}
+		<li><a href="/ingredient/{{ slug }}">{{ slug }}</a></li>
+		{% endfor %}
+	</ul>
 </div>
 </body>
 </html>
-

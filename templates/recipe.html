@@ -11,7 +11,7 @@
 	<p>Ingredients:</p>
 	<ul>
 		{% for ingredient in recipe['ingredients'] %}
-		<li>{{ ingredient }}</li>
+		<li><a href="/ingredient/{{ ingredient }}">{{ ingredient }}</a></li>
 		{% endfor %}
 	</ul>
 	<p>{{ recipe['instructions'] }}</p>
